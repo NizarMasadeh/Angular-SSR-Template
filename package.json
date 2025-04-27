@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^19.2.8",
     "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",
@@ -21,6 +22,9 @@
     "@angular/router": "^19.2.0",
     "@angular/ssr": "^19.2.5",
     "express": "^4.18.2",
+    "nzrm-ng": "^0.5.0",
+    "primeflex": "^4.0.0",
+    "primeicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

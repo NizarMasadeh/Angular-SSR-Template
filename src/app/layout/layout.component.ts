@@ -1,17 +1,22 @@
 import { AfterContentInit, ChangeDetectorRef, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { animate, style, transition, trigger } from '@angular/animations';
-import { routeAnimations } from './widgets/animations/route.animation';
-import { PlatformDetectionService } from './services/platform-detection.service';
+import { PlatformDetectionService } from '../services/platform-detection.service';
+import { FooterComponent } from "./footer/footer.component";
+import { HeaderComponent } from "./header/header.component";
+import { routeAnimations } from '../widgets/animations/route.animation';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  selector: 'app-layout',
+  imports: [
+    RouterOutlet,
+    FooterComponent,
+    HeaderComponent
+  ],
+  templateUrl: './layout.component.html',
+  styleUrl: './layout.component.scss',
   animations: [routeAnimations],
 })
-export class AppComponent implements AfterContentInit {
+export class LayoutComponent implements AfterContentInit {
   animationState: string = '';
 
   constructor(
