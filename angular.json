@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-ssr": {
+    "angular-ssr-template": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ng-ssr",
+            "outputPath": "dist/angular-ssr-template",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-ssr:build:production"
+              "buildTarget": "angular-ssr-template:build:production"
             },
             "development": {
-              "buildTarget": "ng-ssr:build:development"
+              "buildTarget": "angular-ssr-template:build:development"
             }
           },
           "defaultConfiguration": "development"

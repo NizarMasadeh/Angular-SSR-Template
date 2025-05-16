@@ -81,7 +81,7 @@ src/
 3. **Build for Production**:
    ```bash
    npm run build
-   npm run serve:ssr:ng-ssr
+   npm run serve:ssr:angular-ssr-template
    ```
 
 ---
